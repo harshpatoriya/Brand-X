@@ -102,7 +102,8 @@ section {
 .heading h2 {
   color: var(--text-color);
 }
-.shop-container {
+.shop-container,
+.new-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 1rem;
@@ -159,4 +160,82 @@ section {
 }
 .box .bx-cart:hover {
   background: #8fc53d;
+}
+/* new Arrival */
+.new-container .box {
+  border-radius: 4px;
+}
+.new-container .box .box-img {
+  border-radius: 4px;
+}
+
+/* about */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.about-img img {
+  width: 80%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.about-text span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+.about-text p {
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1.4rem;
+}
+/* brands */
+.brands-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.brands-container img {
+  width: 100px;
+  filter: grayscale(1);
+}
+.brands-container img:hover {
+  filter: grayscale(0);
+}
+/* contant */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact h2 {
+  color: #fff;
+}
+.contact-box {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.contact-box input {
+  width: 260px;
+  height: 44px;
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 10px;
+}
+.contact-box .btn {
+  height: 44px;
+  padding: 11px;
+  border-radius: 0;
+  font-weight: 500;
+  text-transform: uppercase;
 }
